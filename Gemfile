@@ -32,6 +32,8 @@ gem 'simple_form'
 
 gem 'devise'
 
+gem 'font-awesome-rails'
+
 
 
 # Use Redis adapter to run Action Cable in production

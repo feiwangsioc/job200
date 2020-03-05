@@ -50,7 +50,8 @@ class Admin::JobsController < ApplicationController
     @job = Job.find(params[:id])
     @job.publish!
 
-    redirect_to :back
+    # redirect_to :back
+    redirect_back fallback_location: admin_jobs_path
   end
 
   def hide
@@ -58,7 +59,8 @@ class Admin::JobsController < ApplicationController
 
     @job.hide!
 
-    redirect_to :back
+    # redirect_to :back
+    redirect_back fallback_location: admin_jobs_path
   end
 
   private
